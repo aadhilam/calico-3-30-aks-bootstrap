@@ -1,0 +1,12 @@
+# Calico operator settings for AKS BYO-CNI
+installation:
+  kubernetesProvider: AKS
+  cni:
+    type: Calico
+  calicoNetwork:
+    bgp: Disabled
+    # Choose a pod CIDR that does NOT overlap your AKS node-subnet or any VPN/VNet ranges.
+    # 10.244.0.0/16 is the example used in the Calico guide. ➜ docs.tigera.io  :contentReference[oaicite:0]{index=0}
+    ipPools:
+    - cidr: 10.244.0.0/16   # or 192.168.0.0/16 per AKS page  :contentReference[oaicite:1]{index=1}
+      encapsulation: VXLAN

@@ -1,0 +1,27 @@
+# Ignore Terraform state files
+terraform/*.tfstate
+# Ignore Terraform plan files
+terraform/*.tfplan
+# Ignore Terraform lock files
+terraform/.terraform.lock.hcl
+# Ignore Terraform variable files
+terraform/*.tfvars
+# Ignore Terraform workspace files
+terraform/terraform.tfstate.d/
+# Ignore Terraform override files
+terraform/*.tfoverride
+# Ignore Terraform backup files
+terraform/*.tfbackup
+# Ignore Terraform provider binaries
+terraform/.terraform/providers/
+# Ignore Terraform module cache
+terraform/.terraform/modules/
+# Ignore Terraform CLI configuration files
+terraform/.terraformrc
+# Ignore Terraform provider cache
+terraform/.terraform.d/
+# Ignore Terraform plugin cache
+terraform/.terraform/plugins/
+# Ignore Terraform documentation files
+terraform/README.md
+# Ignore Terraform configuration files
